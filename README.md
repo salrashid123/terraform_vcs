@@ -15,6 +15,8 @@ Cloud Run will:
 * Convert the Terraform JSON Payload to a GCP Structured log and emit them to its own log type.
 
 
+>> This repo is not supported by Google
+
 ### Setup
 
 Its assumed you already have a Terraform Cloud account setup as well as a GCP project.
