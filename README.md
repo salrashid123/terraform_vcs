@@ -23,7 +23,8 @@ Its assumed you already have a Terraform Cloud account setup as well as a GCP pr
 
 This tutorial will setup cloud run, cloud logging, terraform cloud which is triggered manually (or automatic) to run a basic terraform template.
 
-https://github.com/salrashid123/terraform_vcs
+
+>> NOTE, this repo uses Terraform 0.14+
 
 #### Create Service Account for Cloud run
 

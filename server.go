@@ -86,12 +86,12 @@ func eventsMiddleware(h http.Handler) http.Handler {
 			return
 		}
 
-		// requestDump, err := httputil.DumpRequest(r, true)
-		// if err != nil {
-		// 	http.Error(w, err.Error(), http.StatusInternalServerError)
-		// 	return
-		// }
-		// fmt.Println(string(requestDump))
+		requestDump, err := httputil.DumpRequest(r, true)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+		fmt.Println(string(requestDump))
 
 		event := &TFCloudEvent{}
 		err = json.Unmarshal(b, event)
