@@ -1,5 +1,15 @@
 
-provider "http" {}
+terraform {
+  required_providers {
+    http = {
+      source = "hashicorp/http"
+      version = "2.1.0"
+    }
+  }
+}
+
+provider "http" {
+}
 
 variable "user_agent" {
   type = string
