@@ -19,7 +19,7 @@ variable "user_agent" {
 data "http" ga {
   url = "https://httpbin.org/get"
   request_headers = {
-    User-Agent = "${var.user_agent}"
+    User-Agent = "var.user_agent"
   }
 }
 
